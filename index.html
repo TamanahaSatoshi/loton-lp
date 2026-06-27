@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTON（ロトン） - AI予測と収支管理でスマートに楽しむロト支援アプリ</title>
+    <meta name="description" content="ロト6、ロト7、ミニロト対応の決定版アプリ。過去データに基づいたAI予測、出にくい数字を避けるNot番号（除外番号）機能、自動で当選金を集計する収支管理（BOP）など、あなたのロトライフをスマートにサポートします。">
+    
+    <!-- OGP Tags -->
+    <meta property="og:title" content="LOTON（ロトン） - AI予測と収支管理でスマートに楽しむロト支援アプリ">
+    <meta property="og:description" content="ロト6、ロト7、ミニロト対応。AI予測、Not番号指定、自動収支管理、Google Driveバックアップなど便利な機能を搭載。">
+    <meta property="og:image" content="hero_mockup.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="header-glass">
+        <div class="header-container">
+            <div class="logo">
+                <img src="sp6.png" alt="LOTON" class="logo-img">
+                <span class="logo-text">LOTON</span>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#problem" class="nav-link">お悩み</a>
+                <a href="#features" class="nav-link">特徴</a>
+                <a href="#steps" class="nav-link">使い方</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#download-cta" class="btn btn-primary" id="header-dl-btn">ダウンロード</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">LOTO6 / LOTO7 / MINI LOTO 対応</span>
+                <h1 class="hero-title">予測から収支管理までこれ一つ。<br><span class="text-gradient">ロトライフをスマートに。</span></h1>
+                <p class="hero-subtitle">過去データとAIで賢く予測し、面倒な収支計算もすべて自動化。出にくい数字を避ける「Not番号」機能で無駄のない購入をサポートします。</p>
+                <div class="hero-buttons">
+                    <a href="#download-cta" class="btn btn-large btn-primary" id="hero-store-btn-1">無料ダウンロード</a>
+                    <a href="#features" class="btn btn-large btn-secondary" id="hero-more-btn">機能をもっと見る</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="hero_mockup.png" alt="LOTON アプリ画面イメージ" class="hero-mockup-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">こんなお悩みありませんか？</h2>
+                <p class="section-subtitle">ロトを購入する多くの人が抱える、数字選びや管理の煩わしさを解決します。</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card problem-card">
+                    <div class="card-icon">🤔</div>
+                    <h3 class="card-title">数字選びに毎回迷ってしまう</h3>
+                    <p class="card-text">何を基準に数字を選べばいいかわからず、結局いつも同じ数字や単純な組み合わせを選んでしまいがちです。</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">収支管理ができていない</h3>
+                    <p class="card-text">自分がこれまでにどれだけ購入し、いくら当選したのか、通算での収支が不透明になりがちです。</p>
+                </div>
+                <div class="card problem-card">
+                    <div class="card-icon">📲</div>
+                    <h3 class="card-title">データ移行が心配</h3>
+                    <p class="card-text">スマホが突然故障したり、iPhoneからAndroidへの機種変更時に、これまでの履歴や設定が消えてしまわないか不安です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview Section (Interactive Tabs) -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LOTONのコア機能</h2>
+                <p class="section-subtitle">あなたのロト予測と管理を極限までシンプルにする4つのテクノロジー。</p>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tab-buttons" role="tablist">
+                    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-ai" id="btn-tab-ai">🤖 AI予測</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-not" id="btn-tab-not">🚫 Not番号</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-bop" id="btn-tab-bop">💰 収支管理 (BOP)</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-backup" id="btn-tab-backup">☁️ クラウド復元</button>
+                </div>
+                
+                <div class="tab-panels">
+                    <!-- Panel 1: AI Predict -->
+                    <div class="tab-panel active" id="tab-ai" role="tabpanel">
+                        <div class="panel-content">
+                            <div class="panel-text">
+                                <span class="panel-tag">AI Prediction</span>
+                                <h3>過去の偏りからAIが最適な組み合わせを提案</h3>
+                                <p>サーバー側で蓄積された過去の膨大な当選実績データを解析し、次回に選出される確率が最適化された組み合わせを瞬時に算出します。</p>
+                                <ul class="feature-list">
+                                    <li>ワンタップで最適な予測番号を瞬時に自動セット</li>
+                                    <li>動画広告の視聴で、さらに高確率な「AIヒント予測」をアンロック</li>
+                                    <li>過去の発表済み回には実行できない、未来志向 of スマート予測</li>
+                                </ul>
+                            </div>
+                            <div class="panel-visual">
+                                <div class="glass-box">
+                                    <div class="loto-balls-preview">
+                                        <span class="loto-ball p-purple">07</span>
+                                        <span class="loto-ball p-blue">12</span>
+                                        <span class="loto-ball p-green">24</span>
+                                        <span class="loto-ball p-yellow">32</span>
+                                        <span class="loto-ball p-purple">38</span>
+                                        <span class="loto-ball p-blue">41</span>
+                                    </div>
+                                    <p class="visual-desc">AI予測ボタンを押すだけで、バランスの良い組み合わせを自動生成します。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel 2: Not Number -->
+                    <div class="tab-panel" id="tab-not" role="tabpanel">
+                        <div class="panel-content">
+                            <div class="panel-text">
+                                <span class="panel-tag">Not Number</span>
+                                <h3>出にくい番号を除外。無駄のないランダム予測へ</h3>
+                                <p>「この数字は出なさそう」「相性が悪い」と思う番号を除外登録できます。除外された番号は、手動選択画面でタップできなくなり、ランダム予測（Nランダム）時にも絶対に選ばれません。</p>
+                                <ul class="feature-list">
+                                    <li>手動で最大数まで除外番号を自由に指定可能</li>
+                                    <li>直近の当選番号などをシステムが自動計算して除外する「自動Not番号」機能</li>
+                                    <li>予測ポリシーに合わせて、直近3回〜10回など抽出範囲を細かく調整可能</li>
+                                </ul>
+                            </div>
+                            <div class="panel-visual">
+                                <div class="glass-box">
+                                    <div class="loto-balls-preview">
+                                        <span class="loto-ball p-disabled">03</span>
+                                        <span class="loto-ball p-disabled">18</span>
+                                        <span class="loto-ball p-purple">07</span>
+                                        <span class="loto-ball p-blue">12</span>
+                                        <span class="loto-ball p-disabled">29</span>
+                                        <span class="loto-ball p-green">35</span>
+                                    </div>
+                                    <p class="visual-desc">除外設定された番号（薄いピンク）を自動的に避けて予測を組み立てます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel 3: BOP -->
+                    <div class="tab-panel" id="tab-bop" role="tabpanel">
+                        <div class="panel-content">
+                            <div class="panel-text">
+                                <span class="panel-tag">Balance of Payments</span>
+                                <h3>投資額と回収額を自動で計算。収支の「見える化」</h3>
+                                <p>購入登録した口数と、取得した最新の当選結果データをもとに、投資額・回収額およびトータルの収支状況（BOP）を自動で計算します。手動で当選金を調べる面倒な作業は一切不要です。</p>
+                                <ul class="feature-list">
+                                    <li>購入登録時の口数から投資額を自動計算（1口: 200円または300円）</li>
+                                    <li>当選した「等級」と、実際の「当選金額」をシステムで自動マッチングして配当を算出</li>
+                                    <li>ロト6、ロト7、ミニロトそれぞれの収支データを個別に、かつ一目で把握可能</li>
+                                </ul>
+                            </div>
+                            <div class="panel-visual">
+                                <div class="glass-box">
+                                    <div class="bop-stat-preview">
+                                        <div class="stat-row"><span class="stat-label">合計購入金額:</span> <span class="stat-val">12,000 円</span></div>
+                                        <div class="stat-row"><span class="stat-label">合計当選金額:</span> <span class="stat-val text-gold">32,400 円</span></div>
+                                        <div class="stat-row total"><span class="stat-label">合計収支:</span> <span class="stat-val text-green">+20,400 円</span></div>
+                                    </div>
+                                    <p class="visual-desc">ロトごとの収支の推移やトータルの損益状況が一目瞭然になります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel 4: Cloud Sync -->
+                    <div class="tab-panel" id="tab-backup" role="tabpanel">
+                        <div class="panel-content">
+                            <div class="panel-text">
+                                <span class="panel-tag">Google Drive Sync</span>
+                                <h3>Google Driveを介した安心のバックアップ＆復元</h3>
+                                <p>Googleアカウントと連携し、アプリ内の予測履歴、設定、収支データをGoogle Driveに安全に保存します。異なるOS間（iOS ⇄ Android）でのデータ移行にも完全対応しています。</p>
+                                <ul class="feature-list">
+                                    <li>Googleサインインによるシンプルかつ強力なバックアップ設定</li>
+                                    <li>アプリ専用の隠しフォルダに保存するため、Google Driveの容量を無駄に圧迫しません</li>
+                                    <li>OS移行を含む機種変更時や、アプリ再インストール時のデータ移行もワンタップ</li>
+                                </ul>
+                            </div>
+                            <div class="panel-visual">
+                                <div class="glass-box">
+                                    <div class="backup-preview">
+                                        <div class="backup-icon-container">
+                                            <span class="icon-sync">🔄</span>
+                                        </div>
+                                        <div class="backup-status">バックアップデータが最新です</div>
+                                    </div>
+                                    <p class="visual-desc">機種変更でもデータを即座に復元し、これまでの記録をすべて引き継げます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="steps" class="steps-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">インストール後にやること</h2>
+                <p class="section-subtitle">たった3つのステップで、あなたのロト分析・管理環境が整います。</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-badge">01</div>
+                    <h3 class="step-title">最新データを取得</h3>
+                    <p class="step-desc">アプリ起動後、右上にある「更新」ボタンをタップ。数秒から1分程度で、最新の当選データと過去の実績が全て取得されます。</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-badge">02</div>
+                    <h3 class="step-title">AI予測やNot番号を設定</h3>
+                    <p class="step-desc">AI予測ボタンをタップして推奨の組み合わせを出したり、不要な番号をNot番号に設定して自分好みの予測を出力し、予想として登録します。</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-badge">03</div>
+                    <h3 class="step-title">収支の自動チェック</h3>
+                    <p class="step-desc">当選結果の発表後に再度「更新」ボタンをタップするだけで、登録していた予想の当選チェックと収支計算が自動的に完了します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-subtitle">LOTON（ロトン）に関してよくいただくご質問とその回答です。</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" id="faq-item-1">
+                    <button class="faq-question" id="faq-q-1">
+                        <span>アプリは無料で使えますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-a-1">
+                        <p>はい、すべての基本機能を無料でご利用いただけます。最新の当選結果取得、AI予測、Not番号指定、収支管理、Google Driveバックアップなど、広告視聴などを通じてフルにご活用いただけます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-item-2">
+                    <button class="faq-question" id="faq-q-2">
+                        <span>iPhoneとAndroidの間でデータを引き継げますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-a-2">
+                        <p>はい、可能です。LOTONのバックアップ機能はGoogle Drive（Googleアカウント）を使用しているため、iPhoneからAndroid、またはその逆へのデータ復元も問題なく行えます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-item-3">
+                    <button class="faq-question" id="faq-q-3">
+                        <span>自動更新ではなく手動更新なのはなぜですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-a-3">
+                        <p>LOTONでは最新データの取得時に通信が発生するため、ユーザー様のご都合の良いタイミングやWi-Fi環境等でデータを更新していただくために、あえて手動更新ボタンによる更新方式を採用しています。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-item-4">
+                    <button class="faq-question" id="faq-q-4">
+                        <span>AI予測はどれくらい当たりますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-a-4">
+                        <p>AI予測は、過去の当選実績データを統計学的に処理し、偏りに基づいた組み合わせを作成するサポートツールです。将来の絶対的な当選を保証するものではありませんが、手動での当てずっぽうな選択や重複購入を防ぐスマートな手段としてご活用ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section id="download-cta" class="download-cta-section">
+        <div class="cta-glow"></div>
+        <div class="container cta-container">
+            <h2 class="cta-title">スマートなロトライフを今すぐ始めよう</h2>
+            <p class="cta-desc">LOTONを無料でダウンロードして、AI予測、Not番号機能、自動収支管理の便利さを体験してください。</p>
+            
+            <div class="download-badges">
+                <div class="badge-mock-container">
+                    <a href="#" class="store-badge-mock" id="btn-app-store">
+                        <span class="badge-icon"></span>
+                        <span class="badge-text">
+                            <span class="badge-sub">Download on the</span>
+                            <span class="badge-main">App Store</span>
+                        </span>
+                    </a>
+                    <a href="#" class="store-badge-mock" id="btn-google-play">
+                        <span class="badge-icon">🤖</span>
+                        <span class="badge-text">
+                            <span class="badge-sub">GET IT ON</span>
+                            <span class="badge-main">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="support-info">
+                <span>iOS 14.0以上 / Android 8.0以上対応</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="sp6.png" alt="LOTON" class="logo-img">
+                <span class="logo-text">LOTON</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://stamanaha.pythonanywhere.com/agree/?lang=ja" id="link-terms" target="_blank" rel="noopener noreferrer">利用規約</a>
+                <a href="https://stamanaha.pythonanywhere.com/agree/?lang=ja" id="link-privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9y5cbd9DsibjCwMIqfavR6WmiUE0xYvfor9SN6NYy2GeV7Q/viewform" id="link-contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+            </div>
+            <p class="copyright">&copy; 2026 LOTON All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
