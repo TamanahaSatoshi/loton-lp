@@ -751,6 +751,9 @@ header {
 .badge-icon {
     font-size: 1.8rem;
     margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .badge-text {
